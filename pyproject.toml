@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "viset"
+dynamic = ["version"]
+description = "Visual Itemized SET diagrams: area-proportional Venn/Euler and UpSet plots with itemised member labels, built on eunoia."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Nicole Lee", email = "lnicole8282@gmail.com"}]
+keywords = ['venn', 'euler', 'upset', 'set-visualization', 'proteomics', 'nbdev']
+classifiers = ["Natural Language :: English", "Intended Audience :: Developers", "Development Status :: 3 - Alpha", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only"]
+dependencies = ['eunoia', 'matplotlib', 'plotly', 'pandas>=2.2,<3', 'numpy', 'scipy', 'upsetplot']
+
+[project.urls]
+Repository = "https://github.com/lnicole08/VISET"
+Documentation = "https://lnicole08.github.io/VISET"
+
+[project.entry-points.nbdev]
+viset = "viset._modidx:d"
+
+[project.optional-dependencies]
+# matplotlib-venn + matplotlib-set-diagrams are only used by the Introduction (index.ipynb)
+# to draw its explanatory figures; the docs build (and CI) install them via .[dev]
+dev = ['nbdev', 'matplotlib-venn', 'matplotlib-set-diagrams']
+
+[tool.setuptools.dynamic]
+version = {attr = "viset.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["viset"]
+
+[tool.nbdev]
+title = 'VISET'
+custom_sidebar = true

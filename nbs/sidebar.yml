@@ -1,0 +1,11 @@
+website:
+  sidebar:
+    contents:
+      - index.ipynb
+      - state_of_set_diagrams.ipynb
+      - introduction.ipynb
+      - 00_core.ipynb
+      - 01_venn.ipynb
+      - 02_venn_interactive.ipynb
+      - 03_upset.ipynb
+      - 04_upset_interactive.ipynb

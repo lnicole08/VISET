@@ -1,0 +1,4 @@
+include pyproject.toml
+include LICENSE
+include README.md
+recursive-include viset *.py

@@ -1,0 +1,19 @@
+body { font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+
+/* the cosmo defaults render the page headings very large; tone them down */
+h1, .title { font-size: 1.9rem; font-weight: 600; }
+h2 { font-size: 1.35rem; font-weight: 600; margin-top: 1.7rem; }
+h3 { font-size: 1.12rem; font-weight: 600; }
+
+.cell { margin-bottom: 1rem; }
+.cell > .sourceCode { margin-bottom: 0; }
+.output { margin-top: 0.5rem; }
+
+.description { font-size: 1.05rem; font-style: italic; }
+
+/* keep figures and wide content from overflowing the page column */
+img { max-width: 100%; height: auto; }
+.cell-output-display, .cell-output { max-width: 100%; overflow-x: auto; }
+.cell-output-display .plotly-graph-div, .cell-output-display > div { max-width: 100%; }
+figure { max-width: 100%; }
+table { display: block; overflow-x: auto; }

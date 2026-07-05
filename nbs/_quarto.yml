@@ -1,0 +1,36 @@
+project:
+  type: website
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-location: right
+    keep-md: true
+  commonmark: default
+
+website:
+  twitter-card: true
+  open-graph: true
+  repo-actions: [issue]
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "State of current set diagrams"
+        href: state_of_set_diagrams.html
+      - text: "Introduction"
+        href: introduction.html
+      - text: "Requirements"
+        href: core.html
+      - text: "Venn (static)"
+        href: venn.html
+      - text: "Venn (interactive)"
+        href: venn_interactive.html
+      - text: "UpSet (static)"
+        href: upset.html
+      - text: "UpSet (interactive)"
+        href: upset_interactive.html
+
+metadata-files: [nbdev.yml]
