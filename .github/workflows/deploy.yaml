@@ -29,7 +29,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -e ".[dev]" "pandas<3"
       - name: Build docs
-        run: nbdev_docs
+        run: nbdev-docs
       - uses: actions/configure-pages@v5
       - name: Upload docs artifact
         uses: actions/upload-pages-artifact@v3
