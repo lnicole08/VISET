@@ -35,3 +35,6 @@ include = ["viset"]
 [tool.nbdev]
 title = 'VISET'
 custom_sidebar = true
+# README.md is generated from readme.ipynb (static, hand-authored) — NOT index.ipynb,
+# whose interactive Plotly cells would otherwise bloat the README to ~90KB.
+readme_nb = 'readme.ipynb'
